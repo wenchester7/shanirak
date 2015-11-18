@@ -1,8 +1,35 @@
+body{
+	font:400 15px Lato, sans-serif;
+	line-height:1.8;
+	color:#818181;
+}
+
 .jumbotron{
 	background-color:#f4511e;
 	color: #ffffff;
 	padding:100px 25px;
+	font-family: Montserrat, sans-serif;
 }
+.navbar{
+	font-family: Montserraf, sans-serif;
+}
+
+h2{
+	font-size:24px;
+	text-transform:uppercase;
+	color:#303030;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+h4{
+	font-size:19px;
+	line-height:1.375em;
+	color:#303030;
+	font-weight:400;
+	margin-bottom:30px;
+}
+
 .container-fluid{
 	padding:60px 50px;
 }
@@ -118,4 +145,44 @@
 .navbar-default .navbar-toggle{
 	border-color:transparent;
 	color:#fff !important;
+}
+
+
+/*dkjkjlkdldjlkjflsjfsjdsj*/
+
+
+
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
 }
